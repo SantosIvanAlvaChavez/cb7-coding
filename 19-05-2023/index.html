@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" type="module"></script>
+    <script src="./utils/fn.js" type="module"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="navbar__logo">
+                <img src="./assest/ecommerce-logo.png" alt="ecommerce logo">
+            </div>
+            <ul class="navbar__links d-flex">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Coming Soon</a>
+                </li>
+            </ul>
+            <div class="navbar__icons">
+              <ul class="d-flex">
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Log in
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li>            
+                    <button class="cart">
+                        <i class="fa fa-cart-shopping"></i>
+                        Cart
+                    </button>
+                </li>
+              </ul>  
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="container d-flex">
+            <div class="hero__info">
+                <h1>Elevate your style with the new products</h1>
+                <a 
+                    class="btn"
+                    href="#">
+                    Shop Now
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+                <div class="hero__partners">
+                    <h2>Brands partners</h2>
+                    <img src="./assest/samsung-logo.png" alt="samsung">
+                    <img src="./assest/apple-logo.png" alt="apple">
+                    <img src="./assest/hp-logo.png" alt="hp">
+                    <img src="./assest/microsoft-logo.png" alt="microsoft">
+                    <img src="./assest/fragance-logo.png" alt="fragance">
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="./assest/ecommerce.jpg" alt="hero image">
+            </div>
+        </div>
+
+    </div>
+    <!-- End Hero -->
+
+    <div id="root"></div>
+</body>
+</html>
