@@ -1,0 +1,69 @@
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainContent {
+    height: 300vh;
+    padding: 14px;
+}
+
+/* Components */
+.tweet {
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+}
+
+.tweet img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+    background: #ffffff;
+}
+
+.tweet__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* media query mobile and tablet */
+@media screen and (max-width: 1024px) {
+
+    .mainContent {
+        width: calc(100% -  90px);
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+}
+
+/* media query desktop */
+@media screen and (min-width: 1025px) {
+    .mainContainer {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .mainContent {
+        justify-content: space-between;
+        width: 70%;
+        display: flex;
+    }
+
+    .content {
+        width: 60%;
+    }
+
+    .sidebar  {
+        width: 40%;
+    }
+}
